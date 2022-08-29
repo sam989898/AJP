@@ -1,5 +1,3 @@
-import java.util.Scanner;	// Import the Scanner class
-
 interface Student
 {
   String name = "Jelly Bin ";
@@ -24,8 +22,8 @@ class Student1 implements Student, Academics
   }
   void getData (int score, double per)
   {
-    score = 280;
-    per = 93.3;
+    score = marks;
+    per = percantage;
     System.out.println ("Your Score : " + score);
     System.out.println ("Your Percantage : " + per);
   }
@@ -43,8 +41,8 @@ class Student2 extends Student1
   }
   void getData (int score, double per)
   {
-    score = marks;
-    per = percantage;
+    score = 280;
+    per = 93.3;
     System.out.println ("Your Score : " + score);
     System.out.println ("Your Percantage : " + per);
   }
@@ -58,14 +56,14 @@ class Main
     System.out.println ("Students Records\n ");
     System.out.println ("id : 01 ");
 
-    Student1 xl = new Student1 ();
-      xl.getData ("", 0);
-      xl.getData (0, 0);
+    Student1 obj1 = new Student1 ();
+      obj1.getData ("", 0);
+      obj1.getData (0, 0);
 
       System.out.println ("\nid : 02 ");
-    Student2 x2 = new Student2 ();
-      x2.getData ("", 0);
-      x2.getData (0, 0);
+    Student2 obj2 = new Student2 ();
+      obj2.getData ("", 0);
+      obj2.getData (0, 0);
 
 
 
